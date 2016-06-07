@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#btn").click(function(event) {
+  $("#blanks").submit(function(event) {
 
   var groceries = ["itemOne", "itemTwo", "itemThree", "itemFour", "itemFive"];
   var groceries2 = [];
@@ -12,19 +12,19 @@ $(document).ready(function() {
   $("#items").hide();
 
   groceries2 = groceries2.sort();
-
   groceries3 = groceries2.map(function(item2) {
     return item2.toUpperCase();
   });
 
   var counter = 0;
   groceries3.forEach(function(item2) {
-    $("#result").append("<li>" + groceries3[counter] + "</li>"); counter++;
+    $("#result").append("<li>" + groceries3[counter] + "</li>");
+    counter+= 1;
   });
 
   $("#result").show();
 
-  event.preventDefault();
+    event.preventDefault();
 
   });
 });

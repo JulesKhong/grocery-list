@@ -11,28 +11,26 @@
   <body>
     <div class="container">
       <h1>Grocery list</h1>
-      <div id="blanks">
-        <form>
+      <div>
+        <form id="blanks">
           <div class="form-group">
-          <h3>Add groceries to your list</h3>
+          <h4>Add groceries to your list</h4>
           <ul>
-          <li><label for="listItem"></label></li>
-          <li><input class="listItem" class="form-control" type="text"></li>
-          <li><input class="listItem" class="form-control" type="text"></li>
-          <li><input class="listItem" class="form-control" type="text"></li>
-          <li><input class="listItem" class="form-control" type="text"></li>
-          <li><input class="listItem" class="form-control" type="text"></li>
+          <li><input id="itemOne" type="text"></li>
+          <li><input id="itemTwo" type="text"></li>
+          <li><input id="itemThree" type="text"></li>
+          <li><input id="itemFour" type="text"></li>
+          <li><input id="itemFive" type="text"></li>
           <li><button type="submit" class="btn">Organize my list</button>
           </ul>
           </div>
       </form>
     </div>
-      <div id="results">
+      <!-- <div id="resultBox"> -->
         <h1>Your alphabetized list</h1>
-        <ul id="cleanList">
-
+        <ul id="result">
         </ul>
-      </div>
+      <!-- </div> -->
     </div>
   </body>
 </html>
